@@ -1,13 +1,23 @@
 # Chakki Fresh
 
-An experimental Next.js storefront for freshly milled flour and spice blends in Lucknow. Customers can browse curated blends, build custom mixes, and manage their cart, addresses, and orders.
+A TypeScript web application built with Next.js App Router and React. Its frontend uses Supabase as its data client, with SQL-managed schema and seed data, custom CSS, Tailwind CSS tooling, and Next.js API routes for server-side integrations.
 
-## Tech stack
+## Technology
 
-- Next.js 14 with the App Router
-- React 18 and TypeScript
-- Supabase for data storage
-- Tailwind CSS
+- **Framework:** Next.js 14 App Router, React 18, and TypeScript
+- **Data:** Supabase JavaScript client and a PostgreSQL schema with seed data
+- **Styling:** custom CSS, Tailwind CSS, PostCSS, and Autoprefixer
+- **Utilities:** `date-fns` and `clsx`
+- **Server endpoints:** Next.js route handlers for OTP, payment, and order notifications
+- **Progressive web app:** web app manifest and service worker in `public/`
+
+## Project structure
+
+- `src/app/` — App Router entry point, global styles, and API route handlers
+- `src/components/` — application shell, UI elements, and screen components
+- `src/hooks/` — client-side application state
+- `src/lib/` — Supabase client, data types, and pricing helpers
+- `schema.sql` — database tables, policies, indexes, and initial catalog data
 
 ## Getting started
 
