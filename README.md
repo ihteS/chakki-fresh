@@ -28,11 +28,13 @@ A TypeScript web application built with Next.js App Router and React. Its fronte
 
 ### Setup
 
-1. Install dependencies:
+1. Install the exact dependency versions recorded in `package-lock.json`:
 
    ```bash
-   npm install
+   npm ci
    ```
+
+   Keep `package-lock.json` committed alongside `package.json`. When intentionally changing dependencies, use `npm install` and commit the resulting lockfile update.
 
 2. Create `.env.local` in the project root:
 
